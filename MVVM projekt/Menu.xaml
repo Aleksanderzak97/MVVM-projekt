@@ -1,0 +1,25 @@
+﻿<Window x:Class="MVVM_projekt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVM_projekt"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Auto">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Obrazki/fantasy-art-castle-fantasy-city-artwork-wallpaper.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="363*"/>
+        </Grid.ColumnDefinitions>
+        <Image gif:ImageBehavior.AnimatedSource="Obrazki/goblin-wyvern-rider-age-of-wonders2.gif" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="140,92,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.857,0.53"/>
+        <Button x:Name="menupojedynekbutton" Grid.Column="2" Content="Pojedynek" HorizontalAlignment="Left" Margin="258,270,0,0" VerticalAlignment="Top" Height="54" Width="136"/>
+        <Button x:Name="menuopisbutton" Grid.Column="2" Content="Opis twojej postaci" HorizontalAlignment="Left" Margin="419,338,0,0" VerticalAlignment="Top" Height="54" Width="136"/>
+        <Button x:Name="menuwyjdzbutton" Grid.Column="2" Content="Wyjdź" HorizontalAlignment="Left" Margin="95,338,0,0" VerticalAlignment="Top" Height="54" Width="136"/>
+        <Button x:Name="menustworzpostacbutton" Grid.Column="2" Content="Stwórz Postać" HorizontalAlignment="Left" Margin="258,338,0,0" VerticalAlignment="Top" Height="54" Width="136"/>
+    </Grid>
+</Window>

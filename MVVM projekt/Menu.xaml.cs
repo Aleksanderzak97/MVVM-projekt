@@ -23,6 +23,7 @@ namespace MVVM_projekt
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }
