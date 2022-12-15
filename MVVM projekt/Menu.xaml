@@ -20,6 +20,6 @@
         <Button x:Name="menupojedynekbutton" Grid.Column="2" Content="Pojedynek" HorizontalAlignment="Left" Margin="258,270,0,0" VerticalAlignment="Top" Height="54" Width="136"/>
         <Button x:Name="menuopisbutton" Grid.Column="2" Content="Opis twojej postaci" HorizontalAlignment="Left" Margin="419,338,0,0" VerticalAlignment="Top" Height="54" Width="136"/>
         <Button x:Name="menuwyjdzbutton" Grid.Column="2" Content="Wyjdź" HorizontalAlignment="Left" Margin="95,338,0,0" VerticalAlignment="Top" Height="54" Width="136"/>
-        <Button x:Name="menustworzpostacbutton" Grid.Column="2" Content="Stwórz Postać" HorizontalAlignment="Left" Margin="258,338,0,0" VerticalAlignment="Top" Height="54" Width="136"/>
+        <Button x:Name="menustworzpostacbutton" Grid.Column="2" Content="Stwórz Postać" HorizontalAlignment="Left" Margin="258,338,0,0" VerticalAlignment="Top" Height="54" Width="136" Click="menustworzpostacbutton_Click"/>
     </Grid>
 </Window>
