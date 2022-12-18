@@ -10,28 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MVVM_projekt
+namespace MVVM_projekt.Widok
 {
     /// <summary>
-    /// Logika interakcji dla klasy MainWindow.xaml
+    /// Logika interakcji dla klasy Pojedynek.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Pojedynek : Window
     {
-        public MainWindow()
+        public Pojedynek()
         {
             InitializeComponent();
-            
-        }
-
-        private void menustworzpostacbutton_Click(object sender, RoutedEventArgs e)
-        {
-            TworzeniePostaci tworzeniepostaci = new TworzeniePostaci();
-
-            tworzeniepostaci.Show();
-            this.Hide();
         }
     }
 }

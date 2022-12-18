@@ -9,7 +9,7 @@
         Title="Menu" Height="450" Width="800">
     <Grid ScrollViewer.VerticalScrollBarVisibility="Auto">
         <Grid.Background>
-            <ImageBrush ImageSource="/Obrazki/fantasy-art-castle-fantasy-city-artwork-wallpaper.jpg"/>
+            <ImageBrush ImageSource="Obrazki/fantasy-art-castle-fantasy-city-artwork-wallpaper.jpg"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>

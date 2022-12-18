@@ -58,10 +58,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="TworzeniePostaci.xaml.cs">
+    <Compile Include="Model\GraczModel.cs" />
+    <Compile Include="Model\KapłanModel.cs" />
+    <Compile Include="Model\MagModel.cs" />
+    <Compile Include="Model\PrzeciwnikModel.cs" />
+    <Compile Include="Model\WojownikModel.cs" />
+    <Compile Include="Model\WłaściwościModel.cs" />
+    <Compile Include="Model\ŁucznikModel.cs" />
+    <Compile Include="Widok\OpisPostaci.xaml.cs">
+      <DependentUpon>OpisPostaci.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widok\Pojedynek.xaml.cs">
+      <DependentUpon>Pojedynek.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Widok\TworzeniePostaci.xaml.cs">
       <DependentUpon>TworzeniePostaci.xaml</DependentUpon>
     </Compile>
-    <Page Include="Menu.xaml">
+    <Page Include="Widok\Menu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -69,11 +82,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Menu.xaml.cs">
+    <Compile Include="Widok\Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="TworzeniePostaci.xaml">
+    <Page Include="Widok\OpisPostaci.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Widok\Pojedynek.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Widok\TworzeniePostaci.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -106,10 +127,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Obrazki\fantasy-art-castle-fantasy-city-artwork-wallpaper.jpg" />
+    <Resource Include="Widok\Obrazki\fantasy-art-castle-fantasy-city-artwork-wallpaper.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Obrazki\goblin-wyvern-rider-age-of-wonders2.gif" />
+    <Resource Include="Widok\Obrazki\goblin-wyvern-rider-age-of-wonders2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ModelWidoku\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
